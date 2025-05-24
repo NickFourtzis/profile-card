@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-family: fantasy;
+}
+
+.parallax1 {
+    background-image: url('images/backgroundimg1.jpg');
+}
+
+.parallax2 {
+    background-image: url('images/backimage2.jpg');
+}
+
+.parallax3 {
+    background-image: url('images/backgroundimg3.webp');
+
+}
+
+.parallax4 {
+    background-image: url('images/backgroundimg4.jpg');
+
+}
+
+.parallax1,
+.parallax2,
+.parallax3,
+.parallax4 {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    animation-name: parallax;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes parallax {
+
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.absolute {
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.absolute a {
+    border: 2px solid rgb(74, 117, 209);
+    border-radius: 75px;
+    padding: 15px;
+    margin: 40px;
+    display: block;
+    font-size: 55px;
+    color: rgb(133, 141, 185);
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+.backgroundimg1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.backgroundtech {
+    background-color: rgba(173, 17, 77, 0.2);
+    height: 100%;
+}
+
+.column-50 {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    animation-name: column-50;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    left: -1300px;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes column-50 {
+
+    100% {
+        left: 0;
+    }
+
+}
+
+.column-50 img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
+    box-shadow: 1px 1px 2px rgb(247, 249, 250);
+    position: relative;
+}
+
+.column-50 h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 3px rgb(231, 218, 218);
+    color: rgb(161, 206, 233);
+}
+
+.column-50 ul {
+    list-style-type: none;
+    color: rgb(11, 164, 190);
+}
+
+.column-50 ul li {
+    font-size: 30px;
+    word-spacing: 5px;
+
+}
+
+.column-50 span {
+
+    color: rgb(243, 247, 246);
+}
+
+.column-50rig {
+
+    float: left;
+    width: 50%;
+    color: black;
+    height: 100%;
+    animation-name: column-50rig;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes column-50rig {
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.column-50rig h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 3px black;
+}
+
+.column-50rig p {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 3px black;
+    padding: 20px;
+}
+
+.column-50rig p {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 3px black;
+    padding: 20px;
+}
+
+.column-100 {
+    float: left;
+    width: 100%;
+    background-color: rgba(47, 20, 197, 0.3);
+}
+
+.column-100 h2 {
+    text-align: center;
+    color: White;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px yellow;
+}
+
+.column-50left {
+    float: left;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    position: relative;
+    animation-name: column-50left;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+
+@keyframes column-50left {
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.column-50right {
+    float: left;
+    width: 50%;
+    background-color: rgba(187, 139, 139, 0.3);
+    height: 100%;
+    position: relative;
+    animation-name: column-50left;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+
+@keyframes column-50left {
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+.column-50left h2,
+.column-50right h2 {
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.column-50left ul li {
+    font-size: 22px;
+}
+
+.column-50right ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.column-50right ul li {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+form {
+
+    color: white;
+    padding: 12px
+}
+
+form label {
+    font-size: 25px;
+    float: left;
+    width: 100%;
+    padding: 12px;
+    text-shadow: 2px 2px 2px black;
+    position: relative;
+    animation-name: label;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+}
+
+@keyframes label {
+    100% {
+        opacity: 1;
+    }
+}
+
+form input {
+    width: 50%;
+    padding: 12px 20px;
+    box-shadow: 2px 2px 2px rgb(230, 230, 225);
+    position: relative;
+    animation-name: input;
+    animation-duration: 3s;
+    animation-delay: 1.9s;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes input {
+    100% {
+        opacity: 1;
+    }
+}
+
+form textarea {
+    display: block;
+    width: 50%;
+    height: 110px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    box-shadow: 2px 2px 2px rgb(218, 218, 210);
+    position: relative;
+    animation-name: textarea;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+}
+
+@keyframes textarea {
+    100% {
+        opacity: 1;
+    }
+}
+
+form input[type=submit] {
+    background-color: rgb(157, 149, 221);
+    color: white;
+    font-size: 15px;
+    width: 130px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 4px 3px 2px black;
+    position: relative;
+    animation-name: submit;
+    animation-duration: 2s;
+    animation-delay: 2.3s;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+}
+
+@keyframes submit {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .absolute a {
+        font-size: 50px;
+    }
+
+    .column-50 {
+        width: 100%;
+        height: 40%;
+    }
+
+    .column-50 img {
+        width: 150px;
+    }
+
+    .column-50 h2 {
+        font-size: 16px;
+    }
+
+    .column-50 ul li {
+        font-size: 16px;
+    }
+
+    .column-50rig {
+        width: 100%;
+        height: 60%;
+    }
+
+    .column-50rig h2 {
+        font-size: 20px;
+    }
+
+    .column-50rig p {
+        font-size: 16px;
+    }
+
+    .column-50left ul li {
+        font-size: 18px;
+    }
+
+
+    .column-50right ul li {
+        font-size: 20px;
+    }
+
+    .absolute {
+        width: 100%;
+    }
+}
